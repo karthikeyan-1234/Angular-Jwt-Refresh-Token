@@ -1,0 +1,29 @@
+<div style="width: 550px;margin-top: 10px;margin-left: 10px;">
+
+    <div class="row">
+        <div class="col-lg-2">
+            <label>Username</label>
+        </div>
+    
+        <div class="col-lg-2">
+            <input [ngModel]="username" />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-2">
+            <label>Password</label>
+        </div>
+    
+        <div class="col-lg-2">
+            <input type="password" [ngModel]="password" />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-2">
+            <button (click)="Login()">Login</button>
+        </div>
+    </div>
+
+</div>
