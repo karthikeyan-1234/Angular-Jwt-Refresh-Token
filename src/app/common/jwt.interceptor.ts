@@ -23,7 +23,8 @@ export class JwtInterceptor implements HttpInterceptor {
 
     var new_request = request.clone({
       setHeaders:{
-        "Authorization": 'Bearer ' + jwt_token
+        "Authorization": 'Bearer ' + jwt_token,
+        "Accept-Language": 'fr-FR'
       }
     });
     return next.handle(new_request).pipe(catchError(err => {
@@ -48,7 +49,8 @@ export class JwtInterceptor implements HttpInterceptor {
 
             second_req = request.clone({
               setHeaders:{
-                "Authorization": 'Bearer ' + result.jwt_token
+                "Authorization": 'Bearer ' + result.jwt_token,
+                "Accept-Language": 'fr-FR'
               }
                       
             });

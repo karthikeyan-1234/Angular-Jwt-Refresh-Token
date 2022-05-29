@@ -14,7 +14,7 @@ export class MasterComponent implements OnInit {
   }
 
   Test(){
-    this.http.get("https://localhost:44331/weatherforecast/Test", {responseType: 'text'}).subscribe(res =>{
+    this.http.get("https://localhost:5021/Ocelot/Test", {responseType: 'text'}).subscribe(res =>{
       console.log(res);
     });
   }
